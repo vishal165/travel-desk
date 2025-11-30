@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tours & Itineraries - Travel Diaries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Travel<span>Diaries</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tours.html" class="active">Tours</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-small">Enquire</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <p class="hero-kicker">Sample routes</p>
+        <h1>Itineraries to spark ideas.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid grid-2 align-start">
+        <article class="card tour-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1552055568-9e65c2a0a1a6?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <h2>5-day Kumaon Slow Escape</h2>
+            <p class="card-meta">Suggested start: Kathgodam</p>
+            <ul class="list-dashed">
+              <li>2 nights in a village homestay with forest walks</li>
+              <li>2 nights near a quiet lake with day hikes</li>
+              <li>Road trip with chai stops and local food</li>
+            </ul>
+            <a href="contact.html" class="btn btn-small">Ask for this trip</a>
+          </div>
+        </article>
+
+        <article class="card tour-card">
+          <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1536048810607-3dc7f86981ba?auto=format&fit=crop&w=900&q=80');"></div>
+          <div class="card-body">
+            <h2>4-day Coastal Konkan Hop</h2>
+            <p class="card-meta">Suggested start: Ratnagiri</p>
+            <ul class="list-dashed">
+              <li>Simple stays near quiet beaches</li>
+              <li>Fort visit at sunset and boat ride (seasonal)</li>
+              <li>Seafood trails and local fruit farms in season</li>
+            </ul>
+            <a href="contact.html" class="btn btn-small">Ask for this trip</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Customise any route</h2>
+        <p class="section-intro">
+          These itineraries are starting points. We adjust stays, pace and budgets based on who you’re travelling with.
+        </p>
+        <ul class="list-check">
+          <li>Travelling with parents? We reduce road time and pick easier walks.</li>
+          <li>Working on the go? We choose stays with more reliable internet.</li>
+          <li>Travelling with kids? We add more open spaces and flexible days.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Travel<span>Diaries</span></h3>
+        <p class="footer-text">
+          A tiny travel studio curating unhurried, locally-rooted journeys across India.
+        </p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="blog.html">Travel stories</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <p class="footer-text">Occasional trip updates. No spam, promise.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit" class="btn btn-small">Notify me</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Travel Diaries. Built for learning purposes.</span>
+      <span class="footer-bottom-links">
+        <a href="mailto:hello@traveldiaries.test">hello@traveldiaries.test</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

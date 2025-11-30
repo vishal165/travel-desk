@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Destinations - Travel Diaries</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Travel<span>Diaries</span></a>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a href="destinations.html" class="active">Destinations</a>
+        <a href="tours.html">Tours</a>
+        <a href="blog.html">Blog</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-small">Enquire</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <p class="hero-kicker">Where we currently plan trips</p>
+        <h1>From mountains to quiet coasts.</h1>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Broad regions we work in</h2>
+        <div class="grid grid-3">
+          <article class="card destination-card">
+            <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="card-body">
+              <h3>Western Ghats &amp; Coasts</h3>
+              <p class="card-meta">Konkan • Goa interiors • Coorg</p>
+              <p>Best for slow road trips, tiny beaches, coffee estates and monsoon magic.</p>
+            </div>
+          </article>
+
+          <article class="card destination-card">
+            <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1500534314211-0a24cd03f2c0?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="card-body">
+              <h3>Himalayan Getaways</h3>
+              <p class="card-meta">Kumaon • Himachal • Sikkim</p>
+              <p>Homestays, village walks and quiet corners with mountain views.</p>
+            </div>
+          </article>
+
+          <article class="card destination-card">
+            <div class="card-image" style="background-image:url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="card-body">
+              <h3>Old Towns &amp; Desert</h3>
+              <p class="card-meta">Rajasthan • Kutch</p>
+              <p>Havelis, stepwells, colourful markets and endless skies.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Picking the right place for you</h2>
+        <p class="section-intro">
+          Instead of a giant catalogue, we suggest 1–3 regions that fit your season, budget and pace. Then we refine.
+        </p>
+        <div class="grid grid-2 align-start">
+          <div>
+            <h3 class="h3">Tell us your constraints</h3>
+            <p>We keep it super practical – leave dates, approximate budget, preferred weather and airports you can use.</p>
+          </div>
+          <div>
+            <h3 class="h3">We suggest options</h3>
+            <p>We share one or two draft routes with sample stays and travel time so you can see what the trip feels like.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-logo">Travel<span>Diaries</span></h3>
+        <p class="footer-text">
+          A tiny travel studio curating unhurried, locally-rooted journeys across India.
+        </p>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul class="footer-links">
+          <li><a href="destinations.html">Destinations</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="blog.html">Travel stories</a></li>
+          <li><a href="about.html">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Stay in the loop</h4>
+        <p class="footer-text">Occasional trip updates. No spam, promise.</p>
+        <form class="newsletter-form" onsubmit="return false;">
+          <input type="email" placeholder="Your email" required />
+          <button type="submit" class="btn btn-small">Notify me</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Travel Diaries. Built for learning purposes.</span>
+      <span class="footer-bottom-links">
+        <a href="mailto:hello@traveldiaries.test">hello@traveldiaries.test</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
