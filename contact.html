@@ -17,7 +17,7 @@
         <a href="tours.html">Tours</a>
         <a href="blog.html">Blog</a>
         <a href="about.html">About</a>
-        <a href="contact.html" class="btn btn-small active-btn">Enquire</a>
+        <a href="contact.html" class="btn btn-pill">Enquire</a>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -30,43 +30,68 @@
       <div class="container">
         <p class="hero-kicker">Start a conversation</p>
         <h1>Tell us about the trip you have in mind.</h1>
+        <p>Share a few details about your crew, travel window, and dream experiences — we’ll respond with a draft plan.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container grid grid-2 align-start">
-        <div>
-          <h2 class="section-title">Enquiry form (demo)</h2>
+      <div class="container contact-wrapper">
+        <div class="contact-card enquiry-card">
+          <h2 class="section-title">Tell us about your trip</h2>
           <p class="section-intro">
-            This is a static demo form for your GitHub Pages site. You can later plug this into Google Forms, Formspree
+            This is a static demo form for your GitHub Pages site. You can later plug this into Formspree, Google Forms,
             or any backend you build.
           </p>
           <form class="enquiry-form">
-            <label>
-              Your name
-              <input type="text" placeholder="Name" required />
-            </label>
-            <label>
-              Email
-              <input type="email" placeholder="you@example.com" required />
-            </label>
-            <label>
-              Where are you thinking of travelling?
-              <input type="text" placeholder="Eg. Kumaon, Konkan, open to ideas" />
-            </label>
-            <label>
-              Approximate dates
-              <input type="text" placeholder="Eg. mid July, flexible by a week" />
-            </label>
-            <label>
-              Anything else we should know?
-              <textarea rows="4" placeholder="Who are you travelling with, pace, budget..."></textarea>
-            </label>
-            <button type="submit" class="btn">Submit (demo only)</button>
-            <p class="form-note">This form doesn&apos;t actually send anywhere in this learning version.</p>
+            <div class="form-grid">
+              <label class="floating-field">
+                <span>Your name</span>
+                <input type="text" placeholder="Name" required />
+              </label>
+              <label class="floating-field">
+                <span>Email address</span>
+                <input type="email" placeholder="you@example.com" required />
+              </label>
+              <label class="floating-field">
+                <span>Travel window</span>
+                <input type="text" placeholder="Eg. mid July, flexible by a week" />
+              </label>
+              <label class="floating-field">
+                <span>Group size</span>
+                <input type="number" min="1" placeholder="2 adults + 1 child" />
+              </label>
+              <label class="floating-field form-span">
+                <span>Where are you thinking of travelling?</span>
+                <input type="text" placeholder="Eg. Kumaon, Konkan, open to ideas" />
+              </label>
+              <div class="chip-field form-span">
+                <span>Travel style</span>
+                <div class="chip-group">
+                  <button type="button" class="chip active">Cultural</button>
+                  <button type="button" class="chip">Adventure</button>
+                  <button type="button" class="chip">Family</button>
+                  <button type="button" class="chip">Wildlife</button>
+                  <button type="button" class="chip">Spiritual</button>
+                </div>
+              </div>
+              <label class="floating-field form-span">
+                <span>Anything else we should know?</span>
+                <textarea rows="4" placeholder="Who are you travelling with, pace, budget..."></textarea>
+              </label>
+            </div>
+            <div class="form-footer">
+              <p class="form-note">
+                This form doesn&apos;t actually send anywhere in this learning version. Wire it up later when you have a backend.
+              </p>
+              <button type="submit" class="btn btn-pill">Submit (demo only)</button>
+            </div>
           </form>
         </div>
-        <div>
+        <div class="contact-card contact-info">
+          <div class="contact-visual" aria-hidden="true">
+            <div class="contact-visual-main" style="background-image:url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=900&q=80');"></div>
+            <div class="contact-visual-badge">On ground support</div>
+          </div>
           <h2 class="section-title">Other ways to reach</h2>
           <p class="section-intro">
             In a real project, you could add a WhatsApp link, Instagram handle or phone number here.
@@ -80,31 +105,39 @@
             Response time is usually within 24–48 hours on weekdays. We plan a limited number of trips so we can give
             each one enough attention.
           </p>
+          <p class="section-intro">Prefer WhatsApp? Ping us and we’ll send quick voice notes with ideas.</p>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-grid">
-      <div>
+    <div class="container footer-modern">
+      <div class="footer-brand">
         <h3 class="footer-logo">Travel<span>Diaries</span></h3>
-        <p class="footer-text">
-          A tiny travel studio curating unhurried, locally-rooted journeys across India.
-        </p>
+        <p>A tiny travel studio curating unhurried, locally-rooted journeys across India.</p>
+        <div class="footer-pill">Since 2018 • 200+ itineraries</div>
       </div>
-      <div>
-        <h4>Quick links</h4>
+      <div class="footer-links-col">
+        <h4>Navigation</h4>
         <ul class="footer-links">
           <li><a href="destinations.html">Destinations</a></li>
           <li><a href="tours.html">Tours</a></li>
-          <li><a href="blog.html">Travel stories</a></li>
-          <li><a href="about.html">About us</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-links-col">
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:hello@traveldiaries.test">hello@traveldiaries.test</a></li>
+          <li>+91 90000 00000 (demo)</li>
+          <li>@traveldiaries_demo</li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
         <h4>Stay in the loop</h4>
-        <p class="footer-text">Occasional trip updates. No spam, promise.</p>
+        <p>Occasional trip updates. No spam, promise.</p>
         <form class="newsletter-form" onsubmit="return false;">
           <input type="email" placeholder="Your email" required />
           <button type="submit" class="btn btn-small">Notify me</button>
