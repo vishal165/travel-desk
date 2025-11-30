@@ -1465,7 +1465,7 @@ body {
     inset: 40% 0 0 50%;
   }
 
-  .footer-grid {
+  .footer-modern {
     grid-template-columns: 1.5fr 1fr;
   }
 }
@@ -1512,7 +1512,7 @@ body {
     display: block;
   }
 
-  .footer-grid {
+  .footer-modern {
     grid-template-columns: 1fr;
   }
 
